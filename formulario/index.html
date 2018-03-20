@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flávio Salles</title>
+</head>
+
+<body>
+    <form>
+    <h1>FORMULÁRIO DE CADASTRO</h1>
+
+    <form action="action_page.php" method="post">
+        <p>
+            Digite seu nome:
+            <input type='text' placeholder='Informe seu nome completo' required='true' name='Nome completo'>
+        </p>
+
+        <p>
+            Digite seu e-mail:
+            <input type='text' name='email' placeholder='usuario@email.com'>
+        </p>
+
+        <p>
+            Sexo:
+            <input type="radio" name="sexo" id="masculino" value="Masculino">
+            <label for="masculino">Masculino</label>
+            <input type="radio" name="sexo" id="feminino" value="Feminino">
+            <label for="feminino">Feminino</label>
+        </p>
+
+            <p>Data de nascimento:
+                <input type='date' placeholder='DD/MM/YYYY' name='dataNascimento'>
+                <br>
+            </p>
+
+            Informe seu grau de escolaridade:
+            
+            <select name='tamanho_tabela' size='1'>
+                <option value='Ensino Medio'>Ensino Medio</option>
+                <option value='Superior Completo' selected='true'>
+                    Superior Completo
+                </option>
+                <option value='Pós-graduação'>Pós-graduação</option>
+                <option value='Mestrado'>Mestrado</option>
+                <option value='Doutorado'>Doutorado</option>
+            </select>
+            
+            <p>
+                Estilos musicais preferidos:
+                <select name='tamanho_tabela' size='1'>
+                    <option value='rock'>Rock</option>
+                    <option value='funk'>Funk</option>
+                    <option value='samba'>Samba</option>
+                    <option value='pagode'>Pagode</option>
+                <option value='pop'>Pop</option>
+                <option value='Escolha um estilo' selected='true'> Escolha um estilo</option>
+            </select>
+        </p>
+        
+        <p>
+            Nome do usuário:
+            <input type='text' name='Nome do usuario' placeholder="Nome do usuário">
+            
+        </p>
+        
+        <p>
+            Senha:
+            <input type='password' name='Senha' placeholder='Informe sua senha'>
+            
+        </p>
+        
+        <p>
+            Cor preferida:
+            <input type='color' name='cores'>
+        </p>
+        
+        <p>
+            Quantidade de filhos:
+            <input type='number' name='numeros'>
+        </p>
+        
+        <p>
+            Quantidade de veículos:
+            <input type='range' name='faixa de numeros'>
+        </p>
+        
+        <p>
+            Comentário sobre o site:
+            <textarea cols='20' rows='10' name='comentários'>
+                Excelente site!
+            </textarea>
+            <pre></pre>
+            
+            
+        </p>
+        
+            <input type="radio" name="info" id="informacao" value="Informacao">
+            <label for="informacao">Desejo receber informações por e-mail</label>
+            <br>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar Campos">
+        </p>
+        
+    </form>
+</body>
+</html>
